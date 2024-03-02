@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fire-btn {
+  background: #90ee90;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 32px;
+  border: none;
+  cursor: pointer;
+}

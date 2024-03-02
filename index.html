@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <button class="fire-btn">Click Me!</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <script>
+      const fireBtn = document.querySelector(".fire-btn");
+
+      fireBtn.addEventListener("click", () => {
+        confetti({
+          particleCount: 300,
+          spread: 90,
+          origin: { x: 1, y: 0.9 },
+        });
+
+        confetti({
+          particleCount: 300,
+          spread: 90,
+          origin: { x: 0, y: 0.9 },
+        });
+      });
+    </script>
+  </body>
+</html>
